@@ -16,22 +16,24 @@ import org.canilla.exception.RuntimeConfigurationException;
  */
 public class CanillaClientBuilder {
 
-    private final static String confFile = "conf/conf.properties";
+    private final static String confFile = "/config/conf.properties";
     private final static Log log = LogFactory.getLog(CanillaClientBuilder.class);
 
-    public CanillaClient build() throws RuntimeConfigurationException {
+    public DefaultCanillaClient build() throws RuntimeConfigurationException {
         Properties props = new Properties();
         loadProperties(props);
         
-        CanillaClient client = new DefaultCanillaClient();
+        DefaultCanillaClient client = new DefaultCanillaClient();
         Newsfeed nf = new Newsfeed();
         nf.setAddress(props.getProperty("main-newsfeed.address"));
         nf.setPort(props.getProperty("main-newsfeed.port"));
         nf.setNickname(props.getProperty("main-newsfeed.nickname"));
         nf.setUsername(props.getProperty("main-newsfeed.username"));
         nf.setPassword(props.getProperty("main-newsfeed.password"));
-        
         client.addNewsfeed(nf);
+        
+        client.setSpool(props.getProperty("article-spool"));
+        client.initialize();
         return client;
     }
     
