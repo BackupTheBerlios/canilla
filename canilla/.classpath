@@ -4,7 +4,14 @@
 	<classpathentry kind="src" path="docs"/>
 	<classpathentry kind="src" path="src/test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="lib/xstream-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/xstream-1.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/workbench.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/jface.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/jfacetext.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/runtime.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/swt.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/plugins/org.junit_3.8.1/junit.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse3.0.1/workspace/libraries/osgi.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
