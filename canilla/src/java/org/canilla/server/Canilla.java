@@ -1,4 +1,4 @@
-package ar.com.durango95.canilla.server;
+package org.canilla.server;
 
 /**
  * @author dromoli

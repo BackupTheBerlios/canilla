@@ -1,4 +1,4 @@
-package ar.com.durango95.canilla.exception;
+package org.canilla.exception;
 
 /**
  * @author dromoli

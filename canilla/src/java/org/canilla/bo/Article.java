@@ -1,4 +1,4 @@
-package ar.com.durango95.canilla.bo;
+package org.canilla.bo;
 
 /**
  * Models an USENET message according to RFC 1036.
