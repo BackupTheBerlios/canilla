@@ -227,7 +227,28 @@ public class Article implements Cloneable {
     }
     
     public Object clone() throws CloneNotSupportedException {
-        Article cloned = new Article();
+        Article cloned = (Article)super.clone();
+        cloned.setFrom(from);
+        cloned.setDate(date);
+        cloned.setNewsgroups(newsgroups);
+        cloned.setSubject(subject);
+        cloned.setMessageId(messageId);
+        cloned.setPath(path);
+        cloned.setReplyTo(replyTo);
+        cloned.setSender(sender);
+        cloned.setFollowupTo(followupTo);
+        cloned.setExpires(expires);
+        cloned.setReferences(references);
+        cloned.setControl(control);
+        cloned.setDistribution(distribution);
+        cloned.setOrganization(organization);
+        cloned.setKeywords(keywords);
+        cloned.setSummary(summary);
+        cloned.setApproved(approved);
+        cloned.setLines(lines);
+        cloned.setXref(xref);
+        
+        return cloned;
         
     }
     
