@@ -223,9 +223,11 @@ public class Article implements Cloneable {
         sb.append(lines);
         sb.append("\r\n\tXref:");
         sb.append(xref);
+        return sb.toString();
     }
     
     public Object clone() throws CloneNotSupportedException {
+        Article cloned = new Article();
         
     }
     
